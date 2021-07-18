@@ -16,7 +16,7 @@ public class MenuBuilder {
         menuItem.setName(record.getName());
         menuItem.setType(record.getItemType());
         menuItem.addLinkedItems(record.getItems());
-        menu.getMenuItems().put(record.getId(), menuItem);
+        menu.addMenuItem(record.getId(), menuItem);
     }
 
     public Menu build() {

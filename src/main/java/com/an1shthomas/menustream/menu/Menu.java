@@ -9,8 +9,8 @@ public class Menu {
         this.menuItems = new HashMap<>();
     }
 
-    public Map<Integer, MenuItem> getMenuItems() {
-        return menuItems;
+    public void addMenuItem(Integer id, MenuItem item) {
+        this.menuItems.put(id, item);
     }
 
     public Map<Integer, MenuCategory> getMenuByCategory() {
